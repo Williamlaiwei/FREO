@@ -1,0 +1,347 @@
+/* FREO global styles — matched to letsfreo.com (cream, berry, display headings) */
+
+@font-face {
+  font-family: 'Dreaming Outloud Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/DO-Sans-Regular.woff2') format('woff2');
+}
+
+:root {
+  --cream: #f8f6e7;
+  --paper: #fcfaf5;
+  --berry: #da425b;
+  --ink: #334040;
+  --lilac: #b0a6eb;
+  --muted: #5d6a6a;
+  --card: #ffffff;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--cream);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--cream);
+}
+
+a {
+  color: var(--berry);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.4rem;
+  font-family: 'Dreaming Outloud Sans', 'Fredoka', sans-serif;
+  font-weight: 400;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 90% 8%, rgba(176, 166, 235, 0.28), transparent 42%),
+    radial-gradient(circle at 8% 18%, rgba(218, 66, 91, 0.12), transparent 36%),
+    var(--cream);
+  position: relative;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0.85rem 1.15rem;
+  background: rgba(248, 246, 231, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-logo {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+.main {
+  padding: 0.4rem 1.15rem 5.8rem;
+}
+
+.page-title {
+  font-size: 2rem;
+}
+
+.hero {
+  padding: 0.4rem 0 0.8rem;
+}
+
+.hero-kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 11vw, 3.4rem);
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cup-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  align-items: end;
+  margin: 1.1rem 0 0.4rem;
+}
+
+.cup-row img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 10px rgba(51, 64, 64, 0.18));
+}
+
+.section {
+  margin: 1.6rem 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.section-header h2 {
+  font-size: 1.45rem;
+}
+
+.flavor-scroll {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+  scroll-snap-type: x mandatory;
+}
+
+.flavor-scroll .flavor-card {
+  min-width: 78%;
+  scroll-snap-align: start;
+}
+
+.card-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.flavor-card,
+.store-card,
+.member-card,
+.cta {
+  background: var(--paper);
+  border-radius: 22px;
+  padding: 1rem 1.05rem 1.1rem;
+}
+
+.flavor-cup {
+  display: block;
+  width: 92px;
+  height: auto;
+  margin: 0 auto 0.35rem;
+  filter: drop-shadow(0 8px 8px rgba(51, 64, 64, 0.16));
+}
+
+.flavor-category {
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lilac);
+  font-weight: 700;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--berry);
+}
+
+.store-hours {
+  margin: 0.55rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ink);
+}
+
+.cta {
+  background: var(--lilac);
+  color: var(--paper);
+  margin-top: 0.4rem;
+}
+
+.cta h2,
+.cta p,
+.cta-kicker {
+  color: var(--paper);
+}
+
+.cta-kicker {
+  margin-bottom: 0.2rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cta .button {
+  background: var(--berry);
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.78rem 1.25rem;
+  background: var(--berry);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-secondary {
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+.member-card {
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.member-name,
+.points {
+  font-family: 'Dreaming Outloud Sans', 'Fredoka', sans-serif;
+  font-size: 1.55rem;
+  text-transform: uppercase;
+}
+
+.qr-placeholder {
+  width: 140px;
+  height: 140px;
+  margin: 0.4rem 0 0.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background:
+    repeating-linear-gradient(90deg, var(--ink) 0 8px, transparent 8px 16px),
+    repeating-linear-gradient(0deg, var(--ink) 0 8px, transparent 8px 16px);
+  background-color: #e8e4d4;
+  color: #fff;
+  font-weight: 700;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.form {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.form label {
+  font-weight: 700;
+}
+
+.form input {
+  font: inherit;
+  padding: 0.8rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid #e4ddc8;
+  background: var(--paper);
+}
+
+.error {
+  color: var(--berry);
+  margin: 0;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--paper);
+  border-top: 1px solid #ece6d2;
+  padding: 0.45rem 0 calc(0.45rem + env(safe-area-inset-bottom));
+}
+
+.bottom-nav-link {
+  text-align: center;
+  padding: 0.55rem 0.15rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.bottom-nav-link.is-active {
+  color: var(--berry);
+}

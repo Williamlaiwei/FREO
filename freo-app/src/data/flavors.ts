@@ -1,0 +1,96 @@
+// Mock flavour list from letsfreo.com. Replace with a real API later.
+import type { Flavor } from '../types/flavor'
+
+export const flavors: Flavor[] = [
+  {
+    id: '1',
+    name: "FREO's Classic",
+    description: 'Refreshingly pure, creamy and tart. Unmistakable FREO.',
+    category: 'Frozen Yoghurt',
+    isToday: true,
+  },
+  {
+    id: '2',
+    name: 'Japanese Strawberry',
+    description: 'A perfect play of sour and sweet, with juicy Japanese strawberries.',
+    category: 'Frozen Yoghurt',
+    isToday: true,
+  },
+  {
+    id: '3',
+    name: 'Lychee & Rose',
+    description: 'Flirt with florals, fall for lychee: love at first spoon.',
+    category: 'Frozen Yoghurt',
+    isToday: true,
+  },
+  {
+    id: '4',
+    name: 'Mango',
+    description: 'Juicy, golden and bursting with sunshine.',
+    category: 'Frozen Yoghurt',
+    isToday: false,
+  },
+  {
+    id: '5',
+    name: 'Black Cherry',
+    description: 'Refreshing and sour cherry indulgence.',
+    category: 'Frozen Yoghurt',
+    isToday: false,
+  },
+  {
+    id: '6',
+    name: 'Rindo Matcha',
+    description: 'Ceremonial Rindo matcha: creamy, smooth, deep and elegantly bitter.',
+    category: 'Express Gelato',
+    isToday: true,
+  },
+  {
+    id: '7',
+    name: 'Sicilian Pistachio & Sea Salt',
+    description: 'Pure Sicilian pistachio with a kiss of sea salt.',
+    category: 'Express Gelato',
+    isToday: false,
+  },
+  {
+    id: '8',
+    name: 'Lotus Biscoff',
+    description: 'The cookie you crave, now in a creamy swirl of bliss.',
+    category: 'Express Gelato',
+    isToday: false,
+  },
+  {
+    id: '9',
+    name: 'Japanese Black Sesame & Bamboo Charcoal',
+    description: 'Rich, earthy, nutty, and silky smooth.',
+    category: 'Express Gelato',
+    isToday: false,
+  },
+  {
+    id: '10',
+    name: 'Hazelnut',
+    description: 'Roasted, smooth, nutty and irresistibly indulgent.',
+    category: 'Express Gelato',
+    isToday: false,
+  },
+  {
+    id: '11',
+    name: 'Belgian 70% Dark Chocolate',
+    description: 'Dark, bold and unapologetically rich.',
+    category: 'Plant-Based',
+    isToday: false,
+  },
+  {
+    id: '12',
+    name: 'Watermelon Yuzu',
+    description: 'Sweet, citrusy, refreshing, and summer in a swirl.',
+    category: 'Plant-Based',
+    isToday: false,
+  },
+  {
+    id: '13',
+    name: 'Açaí',
+    description: 'Bold, high-grade açaí-packed and blissfully refreshing.',
+    category: 'Plant-Based',
+    isToday: true,
+  },
+]
